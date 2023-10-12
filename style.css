@@ -6,6 +6,11 @@ list-style: none;
 text-decoration: none;
 font-family: 'poppins';
 }
+.container{
+    min-height: 100vh;
+    min-width: 100% ;
+    background-color: black;
+}
 .header{
     height: 80px;
     width: 100%;
@@ -14,6 +19,8 @@ font-family: 'poppins';
     justify-content: space-between;
     align-items: center;
     padding: 0 8% ;
+    position: fixed;
+    z-index: 99;
 }
 .left-side{
     display: flex;
@@ -26,20 +33,28 @@ font-family: 'poppins';
     position: relative;
 }
 .header ul li a{
-    color: aquamarine;
+    color: rgb(255, 255, 255);
+    transition: .6s;
+    position: relative;
 }
-.header ul li::after{
+.header ul li:hover a{
+    color: crimson;
+}
+.header ul li a:after{
     position: absolute;
     content: "";
     height: 3px;
     width: 0%;
     top: 100% ;
     left: 0;
-    background-color: black;
+    background-color: rgb(210, 52, 52);
     transition: .6s;
 }
 
-.header ul li:hover::after{
+.header ul li:last-child:after{
+display: none;
+}
+.header ul li a:hover:after{
     width: 100%;
 }
 .social{
@@ -49,31 +64,76 @@ font-family: 'poppins';
 .social i{
     transition: .6s;
     cursor: pointer;
-    color: rgb(5, 15, 49);
+    color: rgb(205, 63, 32);
 }
 .social i:hover{
     transform: translateY(-8px);
-    color: rgb(197, 150, 80);
+    color: rgb(175, 112, 17);
 }
 button{
     padding: 8px 12px;
     width: 120px;
     background-color: transparent;
-    border: 1px solid rgba(38, 26, 93, 0.2);
-    color:blueviolet;
+    border: 1px solid rgba(7, 4, 20, 0.2);
+    color:rgb(203, 224, 244);
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 17px;
     transition: .6s;
 }
+
 button:hover{
-    color: bisque;
-    background-color: rgb(15, 29, 117);
+    color: rgb(219, 89, 33);
+    background-color: rgb(184, 184, 186);
     transform: translateY(-3px);
 }
 .header .fa-bars{
     padding: 12px;
     border-radius: 5px;
-    border: 1px solid rgba(38, 26, 93, 0.2);
+    border: 1px solid rgba(246, 245, 245, 0.2);
     font-size: 1.3rem;
+    
     transition: .6s;
+}
+.header .fa-bars:hover{
+    color: #3b1414;
+    background-color: crimson;
+    transform: translateY(-3px);
+}
+.displnone{
+    display: none;
+
+}
+@media(max-width:900px){
+    .header.fa-bars{
+        display: block;
+    }
+    .header ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-bottom: 2px solid #fff;
+        width: 100%;
+        display: none;
+        transition:.6s;
+
+    }
+    .header ul li{
+        display: block;
+        margin: 18px 0;
+        padding: 10px 0;
+        padding-left: 8% !important;
+        border-bottom: 0.2px solid rgba(255, 255,255, 0.05);
+    }
+    .header .show{
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    .displvisibl{
+        display: none;
+    }
+.displnone{
+    display: flex;
+}
 }
