@@ -144,7 +144,7 @@ background-position: center;
      width: 100%;
 }
 .about-content{
-    width: 55%;
+    width: 59%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,14 +152,14 @@ background-position: center;
 }
 
 .about-content h2{
-    font-size: 3.2rem;
+    font-size: 3.4rem;
 }
 
 .about-content p{
     font-size: 20px;
     color:black;
     font-weight: 200;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .about-content ul{
@@ -215,6 +215,11 @@ background-position: center;
     .about-content ul li{
         margin: 10px;
         font-size: 18px ;
+    }
+    .about-content{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 2rem;
     }
 }
 
