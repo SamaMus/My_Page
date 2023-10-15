@@ -223,7 +223,7 @@ background-position: center;
 }
 .contact .form p,.contact .form p span {
     color: #d6c1c1;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .contact .form p span{
     color: aliceblue;
@@ -278,6 +278,18 @@ textarea{
         margin-top: 50px;
         margin-bottom: 2rem;
     }
+    .contact{
+        flex-direction: column-reverse;
+    }
+    .contact .image{
+       width: 100%;
+    }
+input, textarea, .contact .form{
+    width: 100%;
+}
+.contact .form h1{
+    margin-top: 30px;
+}
 }
 
 
