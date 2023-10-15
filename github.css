@@ -2,162 +2,93 @@ body {
  padding: 0;
  margin: 0;
  background-image: url("assets/images/github.jpg");
+ background-repeat: no-repeat;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ line-height: 1.5;
+ display: block;
 }
 
-.page {
+section{
     width: 100%;
+    height: 580px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-
-.card {
-    max-width: 400px;
-    border: 1px solid #ddb4b4;
-    border-radius: 9px;
+.section span{
     background-color: #161619;
-    height: 100%;
-}
-
-.image {
-    max-width: 100%;
-    background-image: url('../images/sama2.jpeg');
-    height: 300px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    border-radius: 9px;
-}
-
-.card {
-    box-shadow: rgb(50, 46, 46);
-    width: 90%;
-    margin: 30px auto;
-    border: 1px solid #ababab;
-    border-radius: 10px;
-    background-color: #1e1e22;
-}
-
-.bio {
-    color: white;
-    text-align: center;
-}
-
-.mail {
-    text-decoration: none;
-    color: white;
-    font-size: 11px
-}
-
-.buttons {
-    text-align: center;
-    justify-content: space-around;
-    display: flex;
     width: 100%;
+    height: 5px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+}
+.card {
+background-image: url("https: //wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-card2.png");
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem;
+text-align: center;
+
+}
+ .title h1{
+    font-size: 40px ;
+    margin: 10px 0;
+ }
+.title span{
+    color: #5093E2;
 }
 
-.button {
-    border: 1px solid rgb(221, 208, 208);
-    /* padding: 10px 20px; */
-    border-radius: 6px;
-    gap: 3;
-    width: 30%;
-    height: 35px;
-    display: flex;
-    justify-content: center;
+.title h2{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight:500;
+    display: block;
+
+}
+.line{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: url("http: //wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/hr1.png");
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.bio{
+    padding: 2.3rem;
+}
+
+.button{
+    margin-bottom: 19px;
+    border-radius: 4px;
+    padding: 10px;
+    background: url("http: //wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-btn.png");
+    background-repeat: no-repeat;
+    text-align: center;
     align-items: center;
-    gap: 4px;
-    transition: 0.5s;
-    cursor: pointer;
+    background-color: #4190ea;
+    transition: .6s;
 }
-
-button a {
-    text-decoration: none;
-}
-
-.linkedin {
-    background-color: #5093E2 !important;
-    color: white !important;
-}
-
-.email {
-    color: #23252C;
-}
-
-.email a {
-    color: #23252C !important;
-}
-
-.linkedin a {
-    color: white !important;
-}
-
-.button:hover {
-    background-color: #575758 !important;
-    color: white;
-}
-
-.button:hover a {
-    color: white !important;
-}
-
-.linkedin {
-    border: 1px solid rgb(221, 208, 208);
-    background-color: rgb(56, 56, 205);
-    color: white;
-}
-
-
-
-.global-info {
-    color: white;
-    padding: 30px 10%;
-}
-
-.global-info p {
+.button p{
+    margin: 0;
+    color: rgb(232, 234, 233);
     font-size: 15px;
-    color: #DCDCDC;
-    font-weight: 400;
+}
+.icons i{
+color: aliceblue;
+background-color: black;
+width: 35px;
+height: 35px;
+display: inline-block;
+text-align: center;
+transition: .3s;
+line-height: 30px;
+}
+.fa-brands{
+    font-weight: 300;
 }
 
-.social-media {
-    background-color: #23252C;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    padding: 10px 0;
-}
 
-.social-media i {
-    font-size: 30px !important;
-    color: #918E9B;
-}
-
-.fa-square-twitter:hover {
-    color: white;
-}
-
-.fa-facebook:hover {
-    color: white !important;
-}
-
-.fa-facebook:hover {
-    color: white;
-}
-
-.fa-square-instagram:hover {
-    color: white !important;
-}
-
-.fa-square-instagram:hover {
-    color: white;
-}
-
-.fa-square-github:hover {
-    color: white !important;
-}
-
-.fa-square-github:hover {
-    color: white;
-}
