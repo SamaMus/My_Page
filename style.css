@@ -72,7 +72,7 @@ button{
     width: 120px;
     background-color: transparent;
     border: 2.5px solid rgba(7, 4, 20, 0.2);
-    color:rgb(232, 213, 172);
+    color:rgb(238, 213, 159);
     border-radius: 5px;
     font-size: 17px;
     transition: .6s;
@@ -206,6 +206,69 @@ background-position: center;
     cursor: pointer;
 }
 
+.skill-wrapper{
+    padding: 3% 8%;
+    background-color: antiquewhite;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill h1{
+    color: rgb(8, 8, 8);
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+.skill p{
+    color:#684b4b ;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 42px;
+}
+.card{
+    height: 330px;
+    width: 370px;
+    background-color:rgb(245, 142, 130);
+    padding: 3% 8%;
+    border-radius: 7px;
+    transition: .6s;
+}
+
+.card i{
+    color: rgb(157, 69, 86);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+.card h2{
+    color: #000000;
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.card p{
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+    color: #000000;
+}
+.card:hover{
+    background: linear-gradient(90deg, salmon, rgb(161, 71, 46));
+    transform: translateY(-8px);
+}
+.card:hover i{
+    color: #d6c1c1;
+}
+
+
+
+
 .contact-wrapper{
     padding: 5% 8%;
     background-color:rgb(79, 79, 63);
@@ -261,6 +324,20 @@ textarea{
     height: 100%;
     width: 100%;
 }
+
+@media(max-width:1200px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service h1{
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+
+
 
 @media(max-width:1100px){
     .about{
@@ -333,6 +410,12 @@ padding-top: 28rem;
         font-size: 2.3rem;
         width:80%;
     }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service h1{
+        font-size: 2.5rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -341,5 +424,9 @@ padding-top: 28rem;
     }
 .displnone{
     display: flex;
+}
+.service h1{
+    font-size: 2rem;
+    margin-top: 40px;
 }
 }
