@@ -33,12 +33,12 @@ img {
 }
 
 .card {
-    background-color: white;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 31.25rem;
     padding: 2rem;
+    background: url("http://wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-card2.png") repeat-x right top #f4f4f4;
 }
 
 
@@ -96,16 +96,14 @@ img {
 .icons i{
 color: aliceblue;
 background-color: black;
-width: 35px;
-height: 35px;
+width: 40px;
+height: 40px;
 display: inline-block;
 text-align: center;
 transition: .3s;
 line-height: 30px;
 }
-.fa-brands{
-    font-weight: 300;
-}
+
 .fa-brands:hover{
     color: rgb(186, 73, 73);
     transform: translateY(-3px);
