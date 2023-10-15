@@ -7,33 +7,41 @@ body {
  line-height: 1.5;
  display: block;
 }
-
-section{
-    width: 100%;
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width: 500px;
     height: 580px;
     display: flex;
     flex-direction: column;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid whitesmoke;
 }
 .section span{
     background-color: #161619;
     width: 100%;
     height: 5px;
 }
-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid whitesmoke;
-}
-.card {
-background-image: url("https: //wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-card2.png");
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 2rem;
-text-align: center;
 
+.card {
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 31.25rem;
+    padding: 2rem;
 }
+
+
  .title h1{
     font-size: 40px ;
     margin: 10px 0;
@@ -77,6 +85,14 @@ text-align: center;
     color: rgb(232, 234, 233);
     font-size: 15px;
 }
+.button:hover{
+    color: rgb(239, 86, 21);
+    cursor: pointer;
+    transition: .6s;
+    transform: translateY(-3px);
+
+}
+
 .icons i{
 color: aliceblue;
 background-color: black;
@@ -90,5 +106,9 @@ line-height: 30px;
 .fa-brands{
     font-weight: 300;
 }
-
+.fa-brands:hover{
+    color: rgb(186, 73, 73);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
 
